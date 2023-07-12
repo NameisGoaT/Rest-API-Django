@@ -31,16 +31,17 @@ class BookSerializer(serializers.ModelSerializer):
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = (
-            'id',
-            'product_tag',
-            'name',
-            'category',
-            'price',
-            'stock',
-            'imageUrl',
-            'status',
-            'date_created'
-        )
+        fields="__all__"
+        # fields = (
+        #     'id',
+        #     'product_tag',
+        #     'name',
+        #     'category',
+        #     'price',
+        #     'stock',
+        #     'imageUrl',
+        #     'status',
+        #     'date_created'
+        # )
         model = Product
 
